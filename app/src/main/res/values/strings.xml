@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">RecyclerViewTest</string>
+    <string name="music">Movies</string>
+    <string name="food">Food</string>
+    <string name="personal_care">Personal Care</string>
+    <string-array name="my_dataset">
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+        <item>@string/music</item>
+        <item>@string/food</item>
+        <item>@string/personal_care</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
