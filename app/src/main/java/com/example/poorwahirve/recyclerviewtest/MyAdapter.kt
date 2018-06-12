@@ -32,18 +32,41 @@ class MyAdapter(private val myDataset: Array<String>) : RecyclerView.Adapter<MyA
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+
+
         holder.textView.text = myDataset[position]
+
+
+
         holder.textView.setOnClickListener({v: View? ->
             val context : Context = v!!.context
+
+
+
             //Toast.makeText(context, "Hello: " + position.toString(), Toast.LENGTH_SHORT).show()
             //val intent = Intent(context, Main2Activity::class.java)
             //context.startActivity(intent)
-            val bundle = Bundle()
-            bundle.putString("main", myDataset[position])
-            val fragment = MainFragment()
-            fragment.arguments = bundle
-            val fragmentTransaction : FragmentTransaction = (context as FragmentActivity).fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.trial2, fragment).commit()
+
+
+
+            val myFragmentObservable : Observable<MainFragment> = Observable
+                    .just(MainFragment())
+                    .doOnNext {
+                        val bundle = Bundle()
+                        bundle.putInt("main", position)
+                        it.arguments = bundle
+                        val fragmentTransaction : FragmentTransaction = (context as FragmentActivity).fragmentManager.beginTransaction()
+                        fragmentTransaction.replace(R.id.trial2, it).commit()
+                    }
+            myFragmentObservable.subscribe()
+
+//            val bundle = Bundle()
+//            bundle.putString("main", myDataset[position])
+//            val fragment = MainFragment()
+//            fragment.arguments = bundle
+//            val fragmentTransaction : FragmentTransaction = (context as FragmentActivity).fragmentManager.beginTransaction()
+//            fragmentTransaction.replace(R.id.trial2, fragment).commit()
         })
     }
 

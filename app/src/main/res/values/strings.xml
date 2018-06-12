@@ -39,6 +39,42 @@
         <item>@string/personal_care</item>
     </string-array>
 
+    <string-array name="my_dataset_mapped">
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+        <item>Mapped: @string/music</item>
+        <item>Mapped: @string/food</item>
+        <item>Mapped: @string/personal_care</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
