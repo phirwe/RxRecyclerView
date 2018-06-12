@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import io.reactivex.Observable
+import io.reactivex.Observable.just
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.fragment_blank.*
 import java.util.*
@@ -32,9 +33,10 @@ class MainFragment : Fragment() {
                     it.text = myStringMapped
                 }
 
+
         myTextObservable.subscribe()
 
-        val myButtonObservable : Observable<Button> = Observable
+        Observable
                 .just(clickMe)
                 .doOnNext {
                     it.setOnClickListener {
@@ -42,8 +44,20 @@ class MainFragment : Fragment() {
                         startActivity(intent)
                     }
                 }
+                .subscribe()
 
-        myButtonObservable.subscribe()
+
+
+//        val myButtonObservable : Observable<Button> = Observable
+//                .just(clickMe)
+//                .doOnNext {
+//                    it.setOnClickListener {
+//                        val intent = Intent(activity.applicationContext, Main2Activity::class.java)
+//                        startActivity(intent)
+//                    }
+//                }
+//
+//        myButtonObservable.subscribe()
 
         return fragmentBlank
 
